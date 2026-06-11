@@ -26,6 +26,7 @@ else if (condicaoPagamento === "parcelado") {
     else if (numeroParcelas > 2) {
         valorFinal = precoEtiqueta + (precoEtiqueta*0.1)
         valorParcelas = valorFinal / numeroParcelas
+        console.log("Juros de 10%.")
         console.log("Valor final: R$" + valorFinal)
         console.log("Valor das Parcelas: R$" + valorParcelas)
     }
