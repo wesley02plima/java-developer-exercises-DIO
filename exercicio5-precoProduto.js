@@ -8,11 +8,13 @@ let condicaoPagamento = prompt("Forma de pagamento: ")
 
 if (condicaoPagamento === "a vista debito") {
     valorFinal = precoEtiqueta - (precoEtiqueta*0.10)
+    console.log("Desconto de 10%.")
     console.log("Valor total: R$" + valorFinal)
 }
 
 else if (condicaoPagamento === "a vista dinheiro" || condicaoPagamento === "a vista pix") {
     valorFinal = precoEtiqueta - (precoEtiqueta*0.15)
+    console.log("desconto de 15%.")
     console.log("Valor total: R$" + valorFinal)
 }
 else if (condicaoPagamento === "parcelado") {
@@ -20,6 +22,7 @@ else if (condicaoPagamento === "parcelado") {
     if (numeroParcelas <= 2){
         valorFinal = precoEtiqueta
         valorParcelas = precoEtiqueta / numeroParcelas
+        console.log("Sem juros.")
         console.log("Valor final: R$" + valorFinal)
         console.log("Valor das Parcelas: R$" + valorParcelas)
     }
