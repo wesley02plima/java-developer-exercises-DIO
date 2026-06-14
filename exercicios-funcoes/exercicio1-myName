@@ -1,0 +1,6 @@
+function escrevaNome(name) {
+    console.log("My name is " + name);
+}
+
+escrevaNome("Wesley Pereira");
+
