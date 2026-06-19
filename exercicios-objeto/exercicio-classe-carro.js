@@ -18,10 +18,9 @@ class Carro {
     }
 }
 
-const meuCarro = new Carro("BMW","azul",16);
+const meuCarro = new Carro("Volskwagen T-cross","azul",4);
 meuCarro.custoViagem(); 
 meuCarro.descricaoCarro();
-
 
 
 
